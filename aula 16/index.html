@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            background-color: white;
+            height: 400px;
+            display: flex;
+            flex-direction: row;
+            /*justify-content: space-around;*/
+            align-items: center;
+            flex-wrap: wrap;
+            align-content: stretch;
+        }
+
+        .item{
+            background-color: rgb(104, 218, 226);
+            color: #fff;
+            padding: 20px;
+            margin: 5px;
+            height: 50px;
+            width: 240px;
+        }
+
+        .artigo-02{
+            background-color: rgb(69, 233, 20);
+        }
+
+        .artigo-03{
+            background-color: rgb(241, 72, 199);
+            /*font-size: 3em;*/
+            align-self: flex-end;
+        }
+
+        .containerdiv{
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: nowrap;
+        }
+
+        .div-01{
+            align-items: center;
+            background-color: rgb(238, 17, 17);
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com flexbox</h1>
+
+    <section class="container">
+        
+        <article class="item artigo-01">Artigo 1</article>
+        
+        <article class="item artigo-02">Artigo 2</article>
+        
+        <article class="item artigo-03">Artigo 3</article>
+        <article class="item artigo-03">Artigo 3</article>
+
+    </section>
+
+        <section class="container containerdiv">
+            <div class="div-01"></div>
+        </section>
+</body>
+</html>

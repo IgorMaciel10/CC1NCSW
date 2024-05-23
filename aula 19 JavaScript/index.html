@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <script>
+      document.writeln("Olá mundo!");
+    </script>
+    <h1>JavaScript</h1>
+    <hr />
+
+    <div id="resposta"></div>
+
+    <br />
+
+    <div style="border: 3pxsolid">
+      <input id="usuario" type="text" size="60" />
+      <button onclick="validarUsusario()">Validar</button>
+    </div>
+
+    <script>
+      document.writeln("Flamengo maior do Brasil!!!!!!");
+      window.alert("Bryan bigode de leite");
+      document.getElementById("resposta").innerHTML =
+        "Gabigol não merece vestir a camisa do Flamengo";
+
+      var botao_resposta = window.prompt("Digite seu nome:");
+      window.confirm("voce gosta de PHP?");
+      document.writeln(" <br> " + botao_resposta);
+    </script>
+
+    <script>
+      function validarUsusario() {
+        var nome_usuario = "";
+        nome_usuario = document.getElementById("usuario").value;
+        window.alert("foi digitado" + nome_usuario);
+        if (nome_usuario == "Administrador") {
+          window.alert("ele é um Administrador");
+        } else {
+          window.alert("não é um adminsitrador, é um não binário");
+        }
+      }
+    </script>
+  </body>
+</html>

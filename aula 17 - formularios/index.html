@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <style>
+      * {
+        margin: 0;
+      }
+
+      div {
+        display: flex;
+        justify-content: center;
+      }
+      section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 240px;
+      }
+    </style>
+  </head>
+  <body>
+    <div><h1>Formulario de Contato</h1></div>
+
+    <section>
+      <span>Nome</span>
+      <input type="text" id="nome" /> <br />
+      <br />
+
+      <span>e-mail</span>
+      <input type="text" id="e-mail" /> <br />
+      <br />
+
+      <span>Data nascimento</span>
+      <input type="date" id="Data nascimento" /> <br />
+      <br />
+
+      <span>Visita ao site</span>
+      <input type="datetime-local" /> <br />
+      <br />
+
+      <span>Senha</span>
+      <input type="password" /> <br />
+      <br />
+
+      <span>Contato</span>
+      <input type="radio" name="Contato" id="Sim" value="Sim" />Sim
+      <input type="radio" name="Contato" id="não" value="não" />não <br />
+
+      <span>Assunto:</span>
+      <input type="checkbox" name="auto" id="Automóvel" />Negócio
+      <input type="checkbox" name="auto" id="Financa" />Financas
+      <input type="checkbox" name="auto" id="Tecnologia" />Tecnologia
+      <input type="checkbox" name="auto" id="esporte" />Esporte
+
+      <span>Local:</span>
+      <select name="Local" id="selecione" size="1">
+        <option value="Vitória">Vix</option>
+        <option value="Vila Velha">VV</option>
+        <option value="Viana">Viana</option>
+        <option value="Serra">Serrão</option>
+      </select>
+    </section>
+  </body>
+</html>

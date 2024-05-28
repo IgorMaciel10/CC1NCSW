@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <img src="images.jpg" alt="MIto" height="200px">
+    <section>
+    <div class="container"style="right: auto; 3px solid">
+        E-mail
+        <input id="usuario" type="text" size="60" /><br> <br>
+        Senha
+        <input id="senha" type="password" size="60" />
+        <button onclick="validar()">continuar</button>
+        <button onclick= "abrirtela()">cancelar </button>
+      </div>
+    </section>
+
+ 
+      <script>
+        const adm = "igor@gmail.com"
+        const psw = "123456"
+
+        function validar() {
+          let usuario = document.getElementById("usuario").value
+          let senha = document.getElementById("senha").value
+          if (usuario == adm && senha == psw) {
+            window.alert("Usuario logado com sucesso");
+         
+        } else {
+           
+            window.alert("usuario inválido");
+
+          }
+        }
+      </script>
+
+<script>
+    function abrirtela(){
+        window.open('index2.html')
+    }
+    /*function limpar(){
+        document.getElementById("usuario").value ="Bolsonaro MITO";
+        document.getElementById("senha").value =" ";
+    }*/
+</script>
+</body>
+</html>
